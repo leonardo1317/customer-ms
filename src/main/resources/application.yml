@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    postgres:
+      host: ${HOST}
+      username: ${DATABASE_USERNAME}
+      password: ${DATABASE_PASSWORD}
+      database: ${DATABASE_NAME}
+
+  webflux:
+    base-path: /api
+
+swagger:
+  api:
+    info:
+      title: "API Customer"
+      description: "API Customer."
+      version: "v0.0.1"
